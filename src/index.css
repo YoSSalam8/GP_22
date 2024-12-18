@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: #ffffff;
+  --primary: #133e87;
+  --secondary: #608bc1;
+  --accent: #cbdceb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}

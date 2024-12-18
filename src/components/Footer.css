@@ -1,0 +1,78 @@
+.footer {
+  background-color: var(--primary); /* Primary color for background */
+  color: var(--white); /* White text for contrast */
+  padding: 50px 20px; /* Add extra padding for spacing */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px; /* Increase spacing between sections */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px; /* Ensure better minimum width for sections */
+}
+
+.footer-section h3 {
+  font-size: 1.2rem; /* Larger font for headings */
+  margin-bottom: 20px; /* Add more spacing below headings */
+  border-bottom: 2px solid var(--accent); /* Underline for emphasis */
+  padding-bottom: 5px; /* Padding for spacing below underline */
+}
+
+.footer-section p {
+  font-size: 0.9rem; /* Increase paragraph size */
+  line-height: 1.7; /* Improve readability */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px; /* Slightly increase spacing between links */
+}
+
+.footer-section ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.9rem; /* Increase font size for links */
+  font-weight: 500; /* Add weight for better visibility */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--accent); /* Accent color on hover */
+  transform: translateX(5px); /* Slight animation on hover */
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* Space between social icons */
+}
+
+.social-icons a {
+  color: var(--white);
+  font-size: 1.8rem; /* Increase size for better visibility */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+  transform: scale(1.1); /* Scale up slightly on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px; /* Add more spacing above the bottom bar */
+  font-size: 0.9rem; /* Slightly larger font size */
+  color: var(--white); /* Change to white for uniformity */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle top border */
+  padding-top: 15px;
+}

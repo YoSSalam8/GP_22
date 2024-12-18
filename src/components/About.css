@@ -1,0 +1,41 @@
+.about {
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  height: 100vh; /* Full screen height */
+  background-color: var(--white); /* Light gray background for better contrast */
+  color: var(--primary);
+  text-align: center; /* Center text alignment */
+}
+
+.about-content {
+  max-width: 1400px; /* Increase the maximum width for better screen usage */
+  display: flex;
+  flex-direction: row; /* Maintain the image and text layout */
+  gap: 60px; /* Increase space between image and text */
+}
+
+.about-image {
+  flex: 1;
+  width: 100%;
+  max-width: 600px; /* Increase the max width for larger images */
+  border-radius: 15px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-text h1 {
+  font-size: 2rem; /* Increase font size for heading */
+  margin-bottom: 30px; /* Add more space below heading */
+  color: black;
+}
+
+.about-text p {
+  font-size: 1.5rem; /* Increase font size for the paragraph */
+  line-height: 2; /* Adjust line height for better readability */
+  color: black;
+}

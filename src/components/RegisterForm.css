@@ -1,0 +1,244 @@
+/* General Container Styling */
+.register-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full screen height */
+  background: linear-gradient(to bottom, #e1d7b7, #608bc1); /* Gradient background */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.form-stage-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 600px; /* Limit width */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow-y: auto; /* Scroll only when content exceeds max height */
+  max-height: 90vh; /* Ensure the container doesn't exceed the viewport height */
+  transition: height 0.3s ease; /* Smooth height adjustment when content changes */
+}
+
+/* Headings */
+h2 {
+  color: #133e87;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Input Fields */
+input,
+.select-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus,
+.select-field:focus {
+  border-color: #608bc1;
+  box-shadow: 0 0 5px rgba(96, 139, 193, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Department Section */
+.department-section {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for height changes */
+}
+
+/* Authority Grid Styling */
+.authority-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Spacing between items */
+  margin-top: 10px;
+}
+
+.authority-card {
+  flex: 0 0 calc(50% - 10px); /* Two items per row */
+  background-color: #e1d7b7;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none; /* Prevent text selection */
+}
+
+.authority-card:hover {
+  background-color: #608bc1;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.authority-card.selected {
+  background-color: #133e87;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.next-button {
+  background-color: #608bc1;
+}
+
+.next-button:hover {
+  background-color: #133e87;
+}
+
+.back-button {
+  background-color: #e1d7b7;
+  color: #333;
+}
+
+.back-button:hover {
+  background-color: #bfae87;
+}
+
+.submit-button {
+  background-color: #133e87;
+}
+
+.submit-button:hover {
+  background-color: #0f2c5e;
+}
+
+/* Add Department Button */
+.add-department-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  background-color: #133e87;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.add-department-button svg {
+  margin-right: 8px;
+}
+
+.add-department-button:hover {
+  background-color: #0f2c5e;
+  transform: scale(1.05);
+}
+
+/* Form Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Success Popup */
+.success-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #4caf50; /* Green color for success */
+  margin-bottom: 10px;
+}
+
+.success-popup h2 {
+  font-size: 1.8rem;
+  color: #133e87;
+  margin-bottom: 10px;
+}
+
+.success-popup p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Scrollable Authority List */
+.authority-list {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.authority-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.authority-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.authority-list::-webkit-scrollbar-thumb {
+  background: #608bc1;
+  border-radius: 10px;
+}
+
+.authority-list::-webkit-scrollbar-thumb:hover {
+  background: #133e87;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-stage-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .authority-card {
+    flex: 0 0 calc(100% - 10px); /* Single column layout for small screens */
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
